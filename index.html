@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=BioRhyme&amp;family=Space+Mono&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>Todo-List</title>
+</head>
+
+<body>
+  <div class="app">
+    <div class="todo-list">
+      <h1 class="title">
+        TO-DO-LIST
+      </h1>
+
+      <form class="form" action="" data-form>
+
+        <select name="importancia" class="form-important" data-select>
+          <option disabled selected class="form-important-option">Selecione a importância</option>
+          <option value="urgente" class="form-important-option">Urgente</option>
+          <option value="semiUrgente" class="form-important-option">Semi-Urgente</option>
+          <option value="naoUrgente" class="form-important-option">Não Urgente</option>
+        </select>
+
+        <div class="form-text">
+          <input name="tarefa" class="form-input" type="text" data-atribute-input>
+          <button type="submit" class="form-button" data-atribute-button>Novo Item</button>
+        </div>
+      </form>
+
+      <ul class="list" data-atribute-lista>
+
+      </ul>
+    </div>
+
+    <script type="module" src="./script.js"></script>
+
+</body>
+
+</html>
